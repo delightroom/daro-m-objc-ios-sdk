@@ -1,0 +1,11 @@
+framework module DaroMObjCBridge {
+  umbrella header "DaroMObjCBridge.h"
+  export *
+
+  module * { export * }
+}
+
+module DaroMObjCBridge.Swift {
+  header "DaroMObjCBridge-Swift.h"
+  requires objc
+}
