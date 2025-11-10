@@ -17,12 +17,13 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.swift_version         = '5.0'
 
+  spec.resource_bundles = {
+    'DaroMObjCBridgeResources' => ['DaroMObjCBridge.xcframework/ios-arm64/DaroMObjCBridge.framework/PrivacyInfo.xcprivacy']
+  }
+
   spec.vendored_frameworks = 'DaroMObjCBridge.xcframework'
 
   # DaroMObjCBridge is a dynamic framework that links to DaroM (also dynamic)
   # We need to declare DaroM as a dependency
   spec.dependency 'DaroMAds', '1.1.45-beta'
-
-  spec.frameworks = 'UIKit', 'Foundation'
-
 end
