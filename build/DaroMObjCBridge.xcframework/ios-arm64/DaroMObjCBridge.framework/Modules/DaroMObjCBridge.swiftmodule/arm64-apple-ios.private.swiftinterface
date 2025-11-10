@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DaroMObjCBridge
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DaroMObjCBridge
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import DaroM
 @_exported import DaroMObjCBridge
 import Foundation
@@ -10,6 +10,13 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc final public class DaroMObjCBridgeResources : ObjectiveC.NSObject {
+  @objc final public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public class DaroObjCAppOpenAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any DaroMObjCBridge.DaroObjCAppOpenAdDelegate)?
   @objc public init(adUnitId: Swift.String)
@@ -18,27 +25,23 @@ import _SwiftConcurrencyShims
   @objc public var isReady: Swift.Bool {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var adInfo: DaroMObjCBridge.DaroObjCAdInfo? {
     @objc get
   }
-  #endif
   @objc deinit
 }
 @objc public enum DaroObjCBannerSize : Swift.Int {
   case banner = 0
   case mrec = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc public protocol DaroObjCBannerViewDelegate {
-  @objc func bannerViewDidLoad(_ bannerView: DaroMObjCBridge.DaroObjCBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
-  @objc func bannerView(_ bannerView: DaroMObjCBridge.DaroObjCBannerView, didFailWithError error: Foundation.NSError)
+  @objc optional func bannerViewDidLoad(_ bannerView: DaroMObjCBridge.DaroObjCBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func bannerView(_ bannerView: DaroMObjCBridge.DaroObjCBannerView, didFailWithError error: Foundation.NSError)
   @objc optional func bannerViewDidClick(_ bannerView: DaroMObjCBridge.DaroObjCBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
   @objc optional func bannerViewDidRecordImpression(_ bannerView: DaroMObjCBridge.DaroObjCBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
 }
@@ -46,7 +49,6 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any DaroMObjCBridge.DaroObjCBannerViewDelegate)?
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(unitId: Swift.String, bannerSize: DaroMObjCBridge.DaroObjCBannerSize)
   @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, bannerSize: DaroMObjCBridge.DaroObjCBannerSize, autoLoad: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @objc @_Concurrency.MainActor @preconcurrency public func setRootViewController(_ viewController: UIKit.UIViewController)
   @objc deinit
@@ -55,36 +57,44 @@ import _SwiftConcurrencyShims
   @objc weak public var delegate: (any DaroMObjCBridge.DaroObjCInterstitialAdDelegate)?
   @objc public init(adUnitId: Swift.String)
   @objc public func load()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func show(from viewController: UIKit.UIViewController?)
-  #endif
   @objc public var isReady: Swift.Bool {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var adInfo: DaroMObjCBridge.DaroObjCAdInfo? {
     @objc get
   }
-  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class DaroObjCLightPopupConfiguration : ObjectiveC.NSObject {
+  @objc final public var backgroundColor: UIKit.UIColor
+  @objc final public var cardViewBackgroundColor: UIKit.UIColor
+  @objc final public var adMarkLabelTextColor: UIKit.UIColor
+  @objc final public var adMarkLabelBackgroundColor: UIKit.UIColor
+  @objc final public var closeButtonText: Swift.String
+  @objc final public var closeButtonTextColor: UIKit.UIColor
+  @objc final public var titleTextColor: UIKit.UIColor
+  @objc final public var bodyTextColor: UIKit.UIColor
+  @objc final public var ctaButtonTextColor: UIKit.UIColor
+  @objc final public var ctaButtonBackgroundColor: UIKit.UIColor
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol DaroObjCLightPopupAdLoaderDelegate {
-  @objc func lightPopupAdLoaderDidLoad(_ loader: DaroMObjCBridge.DaroObjCLightPopupAdLoader, ad: DaroMObjCBridge.DaroObjCLightPopupAd, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
-  @objc func lightPopupAdLoader(_ loader: DaroMObjCBridge.DaroObjCLightPopupAdLoader, didFailWithError error: Foundation.NSError)
+  @objc optional func lightPopupAdLoaderDidLoad(_ loader: DaroMObjCBridge.DaroObjCLightPopupAdLoader, ad: DaroMObjCBridge.DaroObjCLightPopupAd, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func lightPopupAdLoader(_ loader: DaroMObjCBridge.DaroObjCLightPopupAdLoader, didFailWithError error: Foundation.NSError)
   @objc optional func lightPopupAdLoaderDidClick(_ loader: DaroMObjCBridge.DaroObjCLightPopupAdLoader, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
   @objc optional func lightPopupAdLoaderDidRecordImpression(_ loader: DaroMObjCBridge.DaroObjCLightPopupAdLoader, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
 }
 @objc public protocol DaroObjCLightPopupAdDelegate {
-  @objc func lightPopupAdDidShow(_ ad: DaroMObjCBridge.DaroObjCLightPopupAd, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
-  @objc func lightPopupAdDidDismiss(_ ad: DaroMObjCBridge.DaroObjCLightPopupAd, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
-  @objc func lightPopupAd(_ ad: DaroMObjCBridge.DaroObjCLightPopupAd, didFailToShow error: Foundation.NSError, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func lightPopupAdDidShow(_ ad: DaroMObjCBridge.DaroObjCLightPopupAd, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func lightPopupAdDidDismiss(_ ad: DaroMObjCBridge.DaroObjCLightPopupAd, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func lightPopupAd(_ ad: DaroMObjCBridge.DaroObjCLightPopupAd, didFailToShow error: Foundation.NSError, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
 }
 @_hasMissingDesignatedInitializers @objc public class DaroObjCLightPopupAd : ObjectiveC.NSObject {
   @objc weak public var delegate: (any DaroMObjCBridge.DaroObjCLightPopupAdDelegate)?
   @objc public func show(from viewController: UIKit.UIViewController)
-  @objc public func setBackgroundColor(_ color: UIKit.UIColor)
-  @objc public func setCardViewBackgroundColor(_ color: UIKit.UIColor)
-  @objc public func setCloseButtonTextColor(_ color: UIKit.UIColor)
+  @objc public func setConfiguration(_ configuration: DaroMObjCBridge.DaroObjCLightPopupConfiguration)
   @objc deinit
 }
 @objc public class DaroObjCLightPopupAdLoader : ObjectiveC.NSObject {
@@ -94,8 +104,8 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol DaroObjCLineBannerViewDelegate {
-  @objc func lineBannerViewDidLoad(_ lineBannerView: DaroMObjCBridge.DaroObjCLineBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
-  @objc func lineBannerView(_ lineBannerView: DaroMObjCBridge.DaroObjCLineBannerView, didFailWithError error: Foundation.NSError)
+  @objc optional func lineBannerViewDidLoad(_ lineBannerView: DaroMObjCBridge.DaroObjCLineBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func lineBannerView(_ lineBannerView: DaroMObjCBridge.DaroObjCLineBannerView, didFailWithError error: Foundation.NSError)
   @objc optional func lineBannerViewDidClick(_ lineBannerView: DaroMObjCBridge.DaroObjCLineBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
   @objc optional func lineBannerViewDidRecordImpression(_ lineBannerView: DaroMObjCBridge.DaroObjCLineBannerView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
 }
@@ -103,7 +113,6 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any DaroMObjCBridge.DaroObjCLineBannerViewDelegate)?
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(unitId: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, autoLoad: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
   @objc @_Concurrency.MainActor @preconcurrency public func loadAd()
   @objc @_Concurrency.MainActor @preconcurrency public func setLineBackgroundColor(_ color: UIKit.UIColor)
   @objc @_Concurrency.MainActor @preconcurrency public func setAdMarkTextColor(_ color: UIKit.UIColor)
@@ -114,24 +123,20 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol DaroObjCNativeViewDelegate {
-  @objc func nativeViewDidLoad(_ nativeView: DaroMObjCBridge.DaroObjCNativeView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
-  @objc func nativeView(_ nativeView: DaroMObjCBridge.DaroObjCNativeView, didFailWithError error: Foundation.NSError)
+  @objc optional func nativeViewDidLoad(_ nativeView: DaroMObjCBridge.DaroObjCNativeView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
+  @objc optional func nativeView(_ nativeView: DaroMObjCBridge.DaroObjCNativeView, didFailWithError error: Foundation.NSError)
   @objc optional func nativeViewDidClick(_ nativeView: DaroMObjCBridge.DaroObjCNativeView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
   @objc optional func nativeViewDidRecordImpression(_ nativeView: DaroMObjCBridge.DaroObjCNativeView, adInfo: DaroMObjCBridge.DaroObjCAdInfo)
 }
-@objc @_Concurrency.MainActor @preconcurrency open class DaroObjCNativeView : UIKit.UIView {
+@objc @objcMembers @_Concurrency.MainActor @preconcurrency open class DaroObjCNativeView : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any DaroMObjCBridge.DaroObjCNativeViewDelegate)?
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(unitId: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public init(unitId: Swift.String, autoLoad: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency open func setupCustomLayout()
   @objc @_Concurrency.MainActor @preconcurrency public func addInternalNativeView()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func bindNativeViews(iconImageView: UIKit.UIImageView?, titleLabel: UIKit.UILabel?, advertiserLabel: UIKit.UILabel?, bodyLabel: UIKit.UILabel?, mediaContentView: UIKit.UIView?, callToActionButton: UIKit.UIButton?)
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency public func loadNativeAd()
   @objc deinit
 }
@@ -141,70 +146,52 @@ import _SwiftConcurrencyShims
   @objc public func load()
   @objc public func setPlacement(_ placement: Swift.String)
   @objc public func setCustomData(_ customData: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func show(from viewController: UIKit.UIViewController?)
-  #endif
   @objc public var isReady: Swift.Bool {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var adInfo: DaroMObjCBridge.DaroObjCAdInfo? {
     @objc get
   }
-  #endif
   @objc deinit
 }
 @objc public enum DaroObjCLogLevel : Swift.Int {
   case off = 0
   case error = 1
   case debug = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DaroObjCBridgeManager : ObjectiveC.NSObject {
-  @objc public static let shared: DaroMObjCBridge.DaroObjCBridgeManager
-  #if compiler(>=5.3) && $NonescapableTypes
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DaroObjCAds : ObjectiveC.NSObject {
+  @objc public static let shared: DaroMObjCBridge.DaroObjCAds
   @objc public var userId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var hasUserConsent: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var gdprConsentString: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var doNotSell: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var ccpaString: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc public var logLevel: DaroMObjCBridge.DaroObjCLogLevel {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func initialize(completion: @escaping (Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @objc public enum DaroObjCAdFormat : Swift.Int {
@@ -213,9 +200,7 @@ import _SwiftConcurrencyShims
   case rewarded = 2
   case native = 3
   case appOpen = 4
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -226,9 +211,7 @@ import _SwiftConcurrencyShims
   @objc final public let adUnitId: Swift.String
   @objc final public let latency: Foundation.NSNumber?
   @objc final public let adNetwork: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(adFormat: DaroMObjCBridge.DaroObjCAdFormat, adUnitId: Swift.String, latency: Foundation.NSNumber?, adNetwork: Swift.String?)
-  #endif
   @objc deinit
 }
 @objc public class DaroObjCRewardedItem : ObjectiveC.NSObject {
