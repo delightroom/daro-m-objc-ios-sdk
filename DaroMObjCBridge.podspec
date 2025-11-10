@@ -21,24 +21,8 @@ Pod::Spec.new do |spec|
 
   # DaroMObjCBridge is a dynamic framework that links to DaroM (also dynamic)
   # We need to declare DaroM as a dependency
-  spec.dependency 'DaroMAds', '1.1.42'
+  spec.dependency 'DaroMAds', '1.1.45-beta'
 
   spec.frameworks = 'UIKit', 'Foundation'
 
-  # Required by AppLovin SDK (DaroM's dependency)
-  spec.weak_frameworks = [
-    'AdSupport',
-    'AVFoundation',
-    'CFNetwork',
-    'CoreGraphics',
-    'CoreMedia',
-    'CoreTelephony',
-    'CoreVideo',
-    'MediaPlayer',
-    'MessageUI',
-    'StoreKit',
-    'SystemConfiguration',
-    'WebKit',
-    'AppTrackingTransparency'
-  ]
 end
