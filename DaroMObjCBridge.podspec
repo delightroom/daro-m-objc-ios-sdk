@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DaroMObjCBridge'
-  spec.version      = '1.1.46-beta'
+  spec.version      = '1.1.44'
   spec.summary      = 'Objective-C Bridge for DaroM iOS SDK'
   spec.description  = <<-DESC
                       Objective-C compatible wrapper for DaroM iOS SDK.

@@ -304,14 +304,83 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSCoder;
 
-@class NSBundle;
+SWIFT_CLASS("_TtC15DaroMObjCBridge18CommonAdBannerView")
+@interface CommonAdBannerView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (void)didMoveToWindow;
+- (void)didMoveToSuperview;
+@property (nonatomic, getter=isHidden) BOOL hidden;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
 
-SWIFT_CLASS("_TtC15DaroMObjCBridge24DaroMObjCBridgeResources")
-@interface DaroMObjCBridgeResources : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSBundle * _Nonnull bundle;)
-+ (NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge18CommonAdNativeView")
+@interface CommonAdNativeView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (void)didMoveToWindow;
+- (void)didMoveToSuperview;
+@property (nonatomic, getter=isHidden) BOOL hidden;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+@interface CommonAdNativeView (SWIFT_EXTENSION(DaroMObjCBridge))
+- (void)addSubview:(UIView * _Nonnull)view;
+@end
+
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge16DaroAdBannerView")
+@interface DaroAdBannerView : CommonAdBannerView
+@end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge16DaroAdNativeView")
+@interface DaroAdNativeView : CommonAdNativeView
+- (void)addSubview:(UIView * _Nonnull)view;
+@end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge24TemplateAdLineBannerView")
+@interface TemplateAdLineBannerView : DaroAdNativeView
+@end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge20DaroAdLineBannerView")
+@interface DaroAdLineBannerView : TemplateAdLineBannerView
+@end
+
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge13DaroAppOpenAd")
+@interface DaroAppOpenAd : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge18DaroInterstitialAd")
+@interface DaroInterstitialAd : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge16DaroLightPopupAd")
+@interface DaroLightPopupAd : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge22DaroLightPopupAdLoader")
+@interface DaroLightPopupAdLoader : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, DaroObjCAdFormat, open) {
@@ -374,7 +443,6 @@ typedef SWIFT_ENUM(NSInteger, DaroObjCBannerSize, open) {
 };
 
 @protocol DaroObjCBannerViewDelegate;
-@class NSCoder;
 @class UIViewController;
 
 SWIFT_CLASS("_TtC15DaroMObjCBridge18DaroObjCBannerView")
@@ -570,6 +638,24 @@ SWIFT_CLASS("_TtC15DaroMObjCBridge20DaroObjCRewardedItem")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC15DaroMObjCBridge14DaroRewardedAd")
+@interface DaroRewardedAd : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+
+
+
+
+
+
+
+
 
 #endif
 #if __has_attribute(external_source_symbol)
