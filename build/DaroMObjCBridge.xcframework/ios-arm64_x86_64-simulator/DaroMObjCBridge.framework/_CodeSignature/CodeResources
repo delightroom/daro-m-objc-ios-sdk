@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DaroMObjCBridge-Swift.h</key>
 		<data>
-		XuSeQJgk3AXCu7H3bNZl/DToQnA=
+		r9iHfWGlSGAFeIzBV17yAew39+s=
 		</data>
 		<key>Headers/DaroMObjCBridge.h</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		75LiQOgJdjUipdXt7sspFgCiZdw=
+		uw77k69YSDSVjCg7spJCDNoBz8E=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aliyn+93HxHRWiV95GDE22Ehcog=
+		g2DCSkwLx2vX4WxgoEHKGit7V6Y=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dAcGPF2GQ00C8g+NC4yakh1QFRs=
+		Ipba7PFjNp/s+P4AuhXIU5y7RQk=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dAcGPF2GQ00C8g+NC4yakh1QFRs=
+		Ipba7PFjNp/s+P4AuhXIU5y7RQk=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aUVR8/RgyqyX+dAwgTVqf6WsWls=
+		NFFd+cvJzzFMXAD7VuGs3O7IVUA=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aliyn+93HxHRWiV95GDE22Ehcog=
+		g2DCSkwLx2vX4WxgoEHKGit7V6Y=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NPg9Sad+8dAXfikpEnB62dwH3rY=
+		qIZe8zMO9PH5kiSImwVOzJfBymM=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NPg9Sad+8dAXfikpEnB62dwH3rY=
+		qIZe8zMO9PH5kiSImwVOzJfBymM=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VHojAY6L8kf/faCWhv6w8C4J5IA=
+		4b/gtmQOrCXF5ZO2+1bd6/poHJc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			syqh+29C4CrixsK0tdSd4a8QeXUrEZt7cH30xlXqt30=
+			jKzcd9105JNPhC5dHE5jYNOsN4lAXtSzAr5xF26AgW4=
 			</data>
 		</dict>
 		<key>Headers/DaroMObjCBridge.h</key>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZOrzd8CXewNL9vweO225g+yAjuD9hvh3u4/KubF8+R4=
+			2/Cw3G0J5RjUTVPU4fpoJbUJm7/+Df9aqWXJE/iqkOM=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBZ6nKGYpzJ90eCTg32zHx82/mqHbl1aTEdqdVHMvk0=
+			cLg//ESuM4PTXnqNwn0YZSeria/xzOD3btwloEDhmPg=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -139,28 +139,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBZ6nKGYpzJ90eCTg32zHx82/mqHbl1aTEdqdVHMvk0=
+			cLg//ESuM4PTXnqNwn0YZSeria/xzOD3btwloEDhmPg=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cd76iePnygrMep889zPD2sjkuRLNfZUtrGzjnc0qMVg=
+			gJfq0x3ZpjWwEK13IZu2BhbJnNEYRIZZg9hFNNhxowY=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZOrzd8CXewNL9vweO225g+yAjuD9hvh3u4/KubF8+R4=
+			2/Cw3G0J5RjUTVPU4fpoJbUJm7/+Df9aqWXJE/iqkOM=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwT9fhAZGRXWibG0JBnkfjR4dWQ2zXhYUbGfRBk+cqo=
+			ZTwRtr052LGTWawHJoSmuCAe2L5rOViWoNtEZ2tMqVo=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwT9fhAZGRXWibG0JBnkfjR4dWQ2zXhYUbGfRBk+cqo=
+			ZTwRtr052LGTWawHJoSmuCAe2L5rOViWoNtEZ2tMqVo=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XqOW5wf8Hy3yOCXf0H33if25H9CpaAkW+3/Vm6OdPao=
+			RhV58Yv9/+qQGn6gLe0MS2/COG/9ulIrj56xDOtGrQk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

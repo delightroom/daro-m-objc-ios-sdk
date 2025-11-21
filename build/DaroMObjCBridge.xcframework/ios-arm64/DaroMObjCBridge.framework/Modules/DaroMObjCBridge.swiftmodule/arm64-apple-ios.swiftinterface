@@ -106,6 +106,7 @@ public protocol HasAdListener {
   final public var gdprConsentString: Swift.String?
   final public var doNotSell: Swift.Bool?
   final public var ccpaString: Swift.String?
+  final public func setAppMuted(_ muted: Swift.Bool)
   final public func initialized(completion: @escaping @_Concurrency.MainActor (DaroMObjCBridge.DaroError?) -> Swift.Void)
   @objc deinit
 }
@@ -276,11 +277,14 @@ public enum DaroAdBannerSize {
     get
   }
 }
-final public class DaroError : Swift.Error, Swift.CustomDebugStringConvertible {
+@_hasMissingDesignatedInitializers final public class DaroError : Swift.Error, Foundation.LocalizedError, Swift.CustomDebugStringConvertible {
   final public let code: DaroMObjCBridge.DaroError.Code
   final public let message: Swift.String
   public init(code: DaroMObjCBridge.DaroError.Code, message: Swift.String)
   final public var debugDescription: Swift.String {
+    get
+  }
+  final public var errorDescription: Swift.String? {
     get
   }
   public static let unspecified: DaroMObjCBridge.DaroError
@@ -531,6 +535,7 @@ public struct DaroAppInfo : Swift.Codable {
     @objc get
     @objc set
   }
+  @objc public func setAppMuted(_ muted: Foundation.NSNumber)
   @objc public var logLevel: DaroMObjCBridge.DaroObjCLogLevel {
     @objc get
     @objc set
@@ -554,8 +559,7 @@ public struct DaroAppInfo : Swift.Codable {
   @objc final public let adFormat: DaroMObjCBridge.DaroObjCAdFormat
   @objc final public let adUnitId: Swift.String
   @objc final public let latency: Foundation.NSNumber?
-  @objc final public let adNetwork: Swift.String?
-  @objc public init(adFormat: DaroMObjCBridge.DaroObjCAdFormat, adUnitId: Swift.String, latency: Foundation.NSNumber?, adNetwork: Swift.String?)
+  @objc public init(adFormat: DaroMObjCBridge.DaroObjCAdFormat, adUnitId: Swift.String, latency: Foundation.NSNumber?)
   @objc deinit
 }
 @objc public class DaroObjCRewardedItem : ObjectiveC.NSObject {
