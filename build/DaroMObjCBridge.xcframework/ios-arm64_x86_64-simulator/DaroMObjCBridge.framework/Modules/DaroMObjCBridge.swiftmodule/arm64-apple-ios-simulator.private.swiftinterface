@@ -535,7 +535,7 @@ public struct DaroAppInfo : Swift.Codable {
     @objc get
     @objc set
   }
-  @objc public func setAppMuted(_ muted: Foundation.NSNumber)
+  @objc public func setAppMuted(_ muted: Swift.Bool)
   @objc public var logLevel: DaroMObjCBridge.DaroObjCLogLevel {
     @objc get
     @objc set

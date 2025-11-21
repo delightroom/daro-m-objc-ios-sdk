@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DaroMObjCBridge-Swift.h</key>
 		<data>
-		r9iHfWGlSGAFeIzBV17yAew39+s=
+		n7e5luQFF0YfP/yyDX766daCtuk=
 		</data>
 		<key>Headers/DaroMObjCBridge.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		g2DCSkwLx2vX4WxgoEHKGit7V6Y=
+		diPUwOB7cISAFIsAeev+3AXNBl8=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ipba7PFjNp/s+P4AuhXIU5y7RQk=
+		0cSDNiT5THqCeQAedqb2oWY6s+Y=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ipba7PFjNp/s+P4AuhXIU5y7RQk=
+		0cSDNiT5THqCeQAedqb2oWY6s+Y=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NFFd+cvJzzFMXAD7VuGs3O7IVUA=
+		tDy/vapcYHx2nkf0F3aEN7OWzFQ=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		g2DCSkwLx2vX4WxgoEHKGit7V6Y=
+		diPUwOB7cISAFIsAeev+3AXNBl8=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qIZe8zMO9PH5kiSImwVOzJfBymM=
+		z6rgiRMYgBdRHViLQl9Pqc1gd8c=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qIZe8zMO9PH5kiSImwVOzJfBymM=
+		z6rgiRMYgBdRHViLQl9Pqc1gd8c=
 		</data>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4b/gtmQOrCXF5ZO2+1bd6/poHJc=
+		KJqgzwQhZ7ZlowTPitY8aJBuMCg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKzcd9105JNPhC5dHE5jYNOsN4lAXtSzAr5xF26AgW4=
+			OyIGDqZdS0VQlGmNwQ5kFJJQhkGE8FNEkPmAUIPej20=
 			</data>
 		</dict>
 		<key>Headers/DaroMObjCBridge.h</key>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2/Cw3G0J5RjUTVPU4fpoJbUJm7/+Df9aqWXJE/iqkOM=
+			aG2TpW2o023VZT0hDGFA451dejFOfk0jhlu9rLdzpbc=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cLg//ESuM4PTXnqNwn0YZSeria/xzOD3btwloEDhmPg=
+			lCfyqthKpcbPKkOIG3UgMVhMPLsuMhoci8UoITXn8vg=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -139,28 +139,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cLg//ESuM4PTXnqNwn0YZSeria/xzOD3btwloEDhmPg=
+			lCfyqthKpcbPKkOIG3UgMVhMPLsuMhoci8UoITXn8vg=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJfq0x3ZpjWwEK13IZu2BhbJnNEYRIZZg9hFNNhxowY=
+			cjopqs16MtDYP/ETJaRFyXBFPzmGc1POkb+1nEKWK1M=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2/Cw3G0J5RjUTVPU4fpoJbUJm7/+Df9aqWXJE/iqkOM=
+			aG2TpW2o023VZT0hDGFA451dejFOfk0jhlu9rLdzpbc=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZTwRtr052LGTWawHJoSmuCAe2L5rOViWoNtEZ2tMqVo=
+			+i/8COxaIL8TldWt5A9+ukcjbLDr4nXLH9KlzZt1sH4=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZTwRtr052LGTWawHJoSmuCAe2L5rOViWoNtEZ2tMqVo=
+			+i/8COxaIL8TldWt5A9+ukcjbLDr4nXLH9KlzZt1sH4=
 			</data>
 		</dict>
 		<key>Modules/DaroMObjCBridge.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RhV58Yv9/+qQGn6gLe0MS2/COG/9ulIrj56xDOtGrQk=
+			ZlhaAcNsn6Lr5CuJRx/khKo/OJpw1QX306lp2MxHVWo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -21596,14 +21596,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@DaroMObjCBridge@objc(cs)DaroObjCAds(im)setAppMuted:",
-            "mangledName": "$s15DaroMObjCBridge0A7ObjCAdsC11setAppMutedyySo8NSNumberCF",
+            "mangledName": "$s15DaroMObjCBridge0A7ObjCAdsC11setAppMutedyySbF",
             "moduleName": "DaroMObjCBridge",
             "declAttributes": [
               "AccessControl",
