@@ -23239,7 +23239,7 @@
       "kind": "StringLiteral",
       "offset": 64,
       "length": 8,
-      "value": "\"1.1.47\""
+      "value": "\"1.1.48\""
     },
     {
       "filePath": "\/Users\/devdelightroom\/Developer\/daroX-iOS\/Projects\/Daro\/Sources\/DaroM\/AdViews\/DaroAdBannerView.swift",
@@ -24147,21 +24147,21 @@
     {
       "filePath": "\/Users\/devdelightroom\/Developer\/daroX-iOS\/Projects\/Daro\/Sources\/Core\/Model\/DaroApi\/DaroApi.swift",
       "kind": "StringLiteral",
-      "offset": 533,
+      "offset": 540,
       "length": 17,
       "value": "\"com.daro.AdUnit\""
     },
     {
       "filePath": "\/Users\/devdelightroom\/Developer\/daroX-iOS\/Projects\/Daro\/Sources\/Core\/Model\/DaroApi\/DaroApi.swift",
       "kind": "StringLiteral",
-      "offset": 7868,
+      "offset": 8637,
       "length": 11,
       "value": "\"\/sdk\/init\""
     },
     {
       "filePath": "\/Users\/devdelightroom\/Developer\/daroX-iOS\/Projects\/Daro\/Sources\/Core\/Model\/DaroApi\/DaroApi.swift",
       "kind": "StringLiteral",
-      "offset": 7911,
+      "offset": 8680,
       "length": 19,
       "value": "\"\/analytics\/events\""
     },
